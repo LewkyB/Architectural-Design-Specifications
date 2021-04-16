@@ -27,14 +27,14 @@
 
 %%% Definitions
 \definecolor{accentcolor}{rgb}{0.0,0.0,0.5} 
-\newcommand{\teamname}{Team Name}
-\newcommand{\productname}{Product Name}
+\newcommand{\teamname}{Team Friendship}
+\newcommand{\productname}{Back Burner Brew}
 \newcommand{\coursename}{CSE 4316: Senior Design I}
-\newcommand{\semester}{Fall 2015}
-\newcommand{\docname}{Architectural Design Specification}
+\newcommand{\semester}{Spring 2021}
+\newcommand{\docname}{Architectural Design Specifications}
 \newcommand{\department}{Department of Computer Science \& Engineering}
 \newcommand{\university}{The University of Texas at Arlington}
-\newcommand{\authors}{Alan Turing \\ Grace Hopper \\ John Von Neumann \\ Ada Lovelace \\ Charles Babbage}
+\newcommand{\authors}{Luke Brown \\ Marcos Juarez Casillas \\ Ju Young Isa Jung \\ Sujan Dumaru \\ Sunghwa Cho \\ Matthew Francis Schultz}
 
 %%% Headers and footers
 \usepackage{fancyhdr}
@@ -70,7 +70,7 @@
 \vspace{0.5 in}
 \begin{figure}[h!]
 	\centering
-   	\includegraphics[width=0.60\textwidth]{images/test_image}
+   	\includegraphics[width=0.50\textwidth]{images/title.PNG}
 \end{figure}
 \vspace{0.5 in}
 {\centering \huge \color{accentcolor} \sc \textbf{\teamname \\ \productname} \par}
@@ -113,14 +113,20 @@
 \section{Subsystem Definitions \& Data Flow}
 \input{tex/data_flow.tex}
 \newpage
-\section{X Layer Subsystems}
-\input{tex/x_layer_subsystems.tex}
+\section{Brew System Vessel Layer Subsystems}
+\input{tex/bsv_layer_subsystems.tex}
 \newpage
-\section{Y Layer Subsystems}
-\input{tex/y_layer_subsystems.tex}
+\section{Analog Components Layer Subsystems}
+\input{tex/ac_layer_subsystems.tex}
 \newpage
-\section{Z Layer Subsystems}
-\input{tex/z_layer_subsystems.tex}
+\section{Digital Components Layer Subsystems}
+\input{tex/dc_layer_subsystems.tex}
+\newpage
+\section{Web Server Layer Subsystems}
+\input{tex/ws_layer_subsystems.tex}
+\newpage
+\section{User Interface Layer Subsystems}
+\input{tex/ui_layer_subsystems.tex}
 \newpage
 
 %%% References

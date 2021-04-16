@@ -1,8 +1,17 @@
-This section breaks down your layer abstraction to another level of detail. Here you grapically represent the logical subsytems that compose each layer and show the interactions/interfaces between those subsystems. A subsystem can be thought of as a programming unit that implements one of the major functions of the layer. It, therefore, has data elements that serve as source/sinks for other subsystems. The logical data elements that flow between subsystems need to be explicitly defined at this point, beginning with a data flow-like diagram based on the block diagram.
+The Back Burner Brew system will consist of five different subsystems: brew
+system vessels, analog components, digital components, web server, and the user
+interface. The brew system vessels will be operated through the analog
+components. The analog components will send data to digital components. The
+analog components will be controlled by the digital components based on what is
+input to the user interface or certain conditions that are predefined such as
+keep water a certain temperature. The web server will be the intermediary
+between the user interface and the digital components. The web server will also
+store all data associated with the brewing process such as temperature or time
+spent on specific tasks.
 
 \begin{figure}[H]
 	\centering
 	\graphicspath{.\images}
 	\includegraphics[scale=0.5]{images/ADS_system.PNG}
-	\caption{Subsystem ADS}
+	\caption{Subsystem Diagram for the Back Burner Brew device.}
 \end{figure}
