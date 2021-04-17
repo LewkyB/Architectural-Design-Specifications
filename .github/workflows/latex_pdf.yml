@@ -10,4 +10,3 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: architectural_design_specification.tex
-          args: "-bibtex -f"
