@@ -10,7 +10,7 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: architectural_design_specification.tex
-          latexmk_use_lualatex: true
+          latexmk_use_xelatex: true
       - uses: actions/upload-artifact@v2
         with:
           name: PDF
