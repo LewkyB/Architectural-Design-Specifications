@@ -9,4 +9,5 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: tree/main/architectural_design_specifications.tex
+          root_file: architectural_design_specifications.tex
+          working-directory: ../..
