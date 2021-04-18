@@ -10,8 +10,15 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: architectural_design_specification.tex
-          args: -bibtex -pdf -file-line-error -interaction=nonstopmod
+          args: 
+            -pdf -file-line-error -halt-on-error -interaction=nonstopmode -pool-size=10000000
           #latexmk_use_lualatex: true
+      - name: Check log file
+        uses: actions/upload-artifact@v1
+        if: failure()
+        with:
+            name: latex_error.log
+            path: latex_error.log
       - uses: actions/upload-artifact@v2
         with:
           name: PDF
