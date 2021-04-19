@@ -12,6 +12,12 @@ jobs:
           root_file: architectural_design_specification.tex
           args: 
                 -pdf -file-line-error -halt-on-error -interaction=nonstopmode 
+       - name: Archive Logs
+        uses: actions/upload-artifact@v1
+        if: always()
+        with:
+          name: logs
+          path: main.log
       - uses: actions/upload-artifact@v2
         with:
           name: PDF
