@@ -11,8 +11,7 @@ jobs:
         with:
           root_file: architectural_design_specification.tex
           args: 
-                -bibtex -f -pdf -file-line-error -halt-on-error -interaction=nonstopmode 
-                #latexmk_use_lualatex: true
+                -pdf -file-line-error -halt-on-error -interaction=nonstopmode 
       - uses: actions/upload-artifact@v2
         with:
           name: PDF
